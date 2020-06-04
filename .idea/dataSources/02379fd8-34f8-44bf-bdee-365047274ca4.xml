@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="study01@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="study01">
+      <Current>1</Current>
+    </schema>
+    <schema id="3" parent="1" name="bolg"/>
+    <schema id="4" parent="1" name="class"/>
+    <schema id="5" parent="1" name="companysales"/>
+    <schema id="6" parent="1" name="db_blog"/>
+    <schema id="7" parent="1" name="eshop"/>
+    <schema id="8" parent="1" name="hotel"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="mydata"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="performance_schema"/>
+    <schema id="13" parent="1" name="school"/>
+    <schema id="14" parent="1" name="shop3c"/>
+    <schema id="15" parent="1" name="sys"/>
+    <schema id="16" parent="1" name="user"/>
+  </database-model>
+</dataSource>
