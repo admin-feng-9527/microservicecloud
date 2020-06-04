@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="study03@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="study03">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bolg"/>
+    <schema id="4" parent="1" name="class"/>
+    <schema id="5" parent="1" name="companysales"/>
+    <schema id="6" parent="1" name="db_blog"/>
+    <schema id="7" parent="1" name="eshop"/>
+    <schema id="8" parent="1" name="hotel"/>
+    <schema id="9" parent="1" name="information_schema"/>
+    <schema id="10" parent="1" name="mydata"/>
+    <schema id="11" parent="1" name="mysql"/>
+    <schema id="12" parent="1" name="performance_schema"/>
+    <schema id="13" parent="1" name="school"/>
+    <schema id="14" parent="1" name="shop3c"/>
+    <schema id="15" parent="1" name="study01"/>
+    <schema id="16" parent="1" name="study02"/>
+    <schema id="17" parent="1" name="sys"/>
+    <schema id="18" parent="1" name="user"/>
+    <table id="19" parent="2" name="dept"/>
+    <column id="20" parent="19" name="dept_no">
+      <Position>1</Position>
+      <DataType>bigint(20)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="21" parent="19" name="dept_name">
+      <Position>2</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <column id="22" parent="19" name="db_source">
+      <Position>3</Position>
+      <DataType>varchar(60)|0</DataType>
+    </column>
+    <key id="23" parent="19" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>dept_no</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
