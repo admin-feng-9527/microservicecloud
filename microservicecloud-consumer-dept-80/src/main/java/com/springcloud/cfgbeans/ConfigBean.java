@@ -2,12 +2,16 @@ package com.springcloud.cfgbeans;
 
 
 
+
+import com.netflix.loadbalancer.IRule;
+import com.netflix.loadbalancer.RandomRule;
+import com.netflix.loadbalancer.RoundRobinRule;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestOperations;
-import org.springframework.web.client.RestTemplate;
+
 
 
 @Configuration
@@ -24,6 +28,11 @@ public class ConfigBean {
     @LoadBalanced
     RestOperations restTemplate(RestTemplateBuilder restTemplateBuilder) {
         return restTemplateBuilder.build();
+    }
+
+    @Bean
+    public IRule myRule() {
+        return new RandomRule();//用随机算法替代轮询
     }
 
 }
