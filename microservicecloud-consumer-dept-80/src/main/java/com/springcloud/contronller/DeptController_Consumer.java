@@ -27,21 +27,18 @@ public class DeptController_Consumer {
     @RequestMapping(value = "/consumer/dept/add")
     public boolean add(Dept dept) {
         //三个参数：url,requestMap ResponseBean.class
-        System.out.println("add");
         return restOperations.postForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
     }
 
     @RequestMapping(value = "/consumer/dept/get/{dept_no}",method = RequestMethod.GET)
     public Dept findById(@PathVariable("dept_no") Long dept_no) {
         //三个参数：url,requestMap ResponseBean.class
-        System.out.println("get");
         return restOperations.getForObject(REST_URL_PREFIX + "/dept/get/" + dept_no, Dept.class);
     }
 
     @RequestMapping(value = "/consumer/dept/list",method = RequestMethod.GET)
     public List<Dept> findAll() {
         //三个参数：url,requestMap ResponseBean.class
-        System.out.println("list");
         return restOperations.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
     }
 
