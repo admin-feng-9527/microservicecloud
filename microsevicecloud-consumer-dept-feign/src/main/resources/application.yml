@@ -10,3 +10,6 @@ eureka:
 feign:
   hystrix:
     enabled: ture #feign开启hystrix，使其在api模块中的服务降级，统一处理熔断
+
+
+
